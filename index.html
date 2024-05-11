@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>RedSky Security</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    
+    <div class="area-for-home-login">
+
+        <center>
+
+            <div class="card-login-admin-passwords">
+
+                <h2>T Y P E <br> L O G I N - I N F O</h2>
+
+                <form action="#" id="login-form">
+                    <div class="username">
+                        <input type="text" id="username" name="username" placeholder="U S E R N A M E" required>
+                    </div>
+                    <div class="password-show-hide">
+                        <input type="password" id="password" name="password" placeholder="P A S S W O R D" required>
+                    </div>
+                    <i class="uil uil-eye" id="show" title="Click Show and Hide Password"></i>
+                    <br>
+                    <a class="reset" href="#">Reset Password ?</a>
+                    <br>
+                    <button type="submit">L O G I N</button>
+                </form>
+
+            </div>
+
+        </center>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+        let show = document.getElementById("show");
+
+        let password = document.getElementById("password");
+
+        show.onclick = function(){
+
+            if (password.type == "password") {
+                password.type = "text";
+            } else{
+                password.type = "password";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
